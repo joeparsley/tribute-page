@@ -1,0 +1,15 @@
+header {
+  @include size(100% 250px);
+  border: 2px solid red;
+
+}
+
+.nav-bar {
+  @include size(100% 60px);
+  border: 2px solid green;
+}
+
+.header {
+  @include size(100% 190px);
+  border: 2px solid blue;
+}

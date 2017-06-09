@@ -12,4 +12,94 @@
 html, body {
   height: 100%; }
 
+header {
+  height: 250px;
+  width: 100%;
+  border: 2px solid red; }
+
+.nav-bar {
+  height: 60px;
+  width: 100%;
+  border: 2px solid green; }
+
+.header {
+  height: 190px;
+  width: 100%;
+  border: 2px solid blue; }
+
+.viewport {
+  height: 100%;
+  width: 100%;
+  background-color: yellow; }
+  .viewport::after {
+    clear: both;
+    content: "";
+    display: block; }
+
+.hero {
+  height: 400px;
+  width: 90%;
+  border: 2px solid lightblue;
+  margin: 0 auto; }
+  .hero::after {
+    clear: both;
+    content: "";
+    display: table; }
+  .hero::after {
+    clear: both;
+    content: "";
+    display: block; }
+
+.main-content {
+  height: 100%;
+  width: 100%;
+  border: 2px solid brown; }
+  .main-content::after {
+    clear: both;
+    content: "";
+    display: block; }
+
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
+  height: 100%; }
+
+.doug-bio {
+  height: 500px;
+  width: 100%;
+  border: 4px solid lime; }
+  .doug-bio .wrapper::after {
+    clear: both;
+    content: "";
+    display: block; }
+
+.band-members {
+  height: 500px;
+  width: 90%;
+  border: 4px solid red;
+  margin: 0 auto; }
+  .band-members::after {
+    clear: both;
+    content: "";
+    display: block; }
+
+.main-square {
+  width: calc(70% - 4px);
+  height: 100%;
+  float: left;
+  background-color: lightblue; }
+
+.top-square {
+  height: calc(50% - 2px);
+  width: 30%;
+  float: right;
+  background-color: purple;
+  margin-bottom: 4px; }
+
+.bottom-square {
+  height: calc(50% - 2px);
+  width: 30%;
+  float: right;
+  background-color: pink; }
+
 /*# sourceMappingURL=styles.css.map */

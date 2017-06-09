@@ -1,0 +1,25 @@
+
+$main-square-width: calc(70% - 4px);
+$sub-square-width: 30%;
+$sub-square-height: calc(50% - 2px);
+
+
+
+
+  .main-square {
+    width: $main-square-width;
+    height: 100%;
+    float: left;
+    background-color: lightblue;
+  }
+  .top-square {
+    @include size($sub-square-width $sub-square-height);
+    float: right;
+    background-color: purple;
+    margin-bottom: 4px;
+  }
+  .bottom-square {
+    @include size($sub-square-width $sub-square-height);
+    float: right;
+    background-color: pink;
+  }
