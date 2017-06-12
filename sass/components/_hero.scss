@@ -4,22 +4,34 @@ $sub-square-width: 30%;
 $sub-square-height: calc(50% - 2px);
 
 
-
+.hero {
+  padding-top: 20px;
 
   .main-square {
     width: $main-square-width;
     height: 100%;
     float: left;
-    background-color: lightblue;
+
+    img {
+      @include size(100% 100%);
+    }
   }
   .top-square {
     @include size($sub-square-width $sub-square-height);
     float: right;
-    background-color: purple;
     margin-bottom: 4px;
+
+    img {
+      @include size(100% 100%);
+    }
   }
   .bottom-square {
     @include size($sub-square-width $sub-square-height);
     float: right;
-    background-color: pink;
+
+    img {
+      @include size(100% 100%);
+    }
   }
+
+}

@@ -4,24 +4,26 @@ $hero-width: 90%;
 .viewport {
   @include grid-container;
   @include size(100% 100%);
-  background-color: yellow;
+  background-color: #666;
 }
 
 
-// .hero {
-//   @include grid-container;
-//   @include size($hero-width 400px);
-//   border: 2px solid lightblue;
-//   margin: 0 auto;
-// }
+.hero {
+  @include size($hero-width 500px);
+  margin: 0 auto;
 
-// .main-content {
-//     @include grid-container;
-//     @include size(100% 100%);
-//     border: 2px solid brown;
-//
-//
-// }
+  @media screen and (max-width: 800px) {
+    @include size($hero-width 275px);
+  }
+}
+
+.main-content {
+    @include grid-container;
+    @include size(100% 100%);
+    border: 2px solid brown;
+
+
+}
 
 // .wrapper {
 //   width: 90%;

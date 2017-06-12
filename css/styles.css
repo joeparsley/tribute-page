@@ -29,8 +29,26 @@ header {
 .viewport {
   height: 100%;
   width: 100%;
-  background-color: yellow; }
+  background-color: #666; }
   .viewport::after {
+    clear: both;
+    content: "";
+    display: block; }
+
+.hero {
+  height: 500px;
+  width: 90%;
+  margin: 0 auto; }
+  @media screen and (max-width: 800px) {
+    .hero {
+      height: 275px;
+      width: 90%; } }
+
+.main-content {
+  height: 100%;
+  width: 100%;
+  border: 2px solid brown; }
+  .main-content::after {
     clear: both;
     content: "";
     display: block; }
@@ -93,23 +111,29 @@ header {
     .nav .dropdown:hover .dropbtn {
       background-color: #3e8e41; } }
 
-.main-square {
-  width: calc(70% - 4px);
-  height: 100%;
-  float: left;
-  background-color: lightblue; }
-
-.top-square {
-  height: calc(50% - 2px);
-  width: 30%;
-  float: right;
-  background-color: purple;
-  margin-bottom: 4px; }
-
-.bottom-square {
-  height: calc(50% - 2px);
-  width: 30%;
-  float: right;
-  background-color: pink; }
+.hero {
+  padding-top: 20px; }
+  .hero .main-square {
+    width: calc(70% - 4px);
+    height: 100%;
+    float: left; }
+    .hero .main-square img {
+      height: 100%;
+      width: 100%; }
+  .hero .top-square {
+    height: calc(50% - 2px);
+    width: 30%;
+    float: right;
+    margin-bottom: 4px; }
+    .hero .top-square img {
+      height: 100%;
+      width: 100%; }
+  .hero .bottom-square {
+    height: calc(50% - 2px);
+    width: 30%;
+    float: right; }
+    .hero .bottom-square img {
+      height: 100%;
+      width: 100%; }
 
 /*# sourceMappingURL=styles.css.map */
