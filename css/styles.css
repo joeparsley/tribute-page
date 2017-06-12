@@ -118,6 +118,16 @@ header {
   height: 500px;
   width: 100%; }
 
+.band-members {
+  height: 500px;
+  width: 90%;
+  margin: 0 auto;
+  border: 3px solid orange; }
+  .band-members::after {
+    clear: both;
+    content: "";
+    display: block; }
+
 .nav {
   display: flex;
   flex-direction: row;
@@ -297,5 +307,59 @@ header {
         font-size: 20px; }
       .doug-bio .bio .box2 p {
         font-size: 14px; } }
+.band-members {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-family: 'Patrick Hand SC', cursive; }
+  .band-members .bret1 {
+    border: 2px solid red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: space-around; }
+    .band-members .bret1 .bret1-image {
+      background-image: url("../img/bret2.jpg");
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      height: 250px;
+      width: 100%; }
+    .band-members .bret1 .bret1-bio {
+      display: flex;
+      flex-direction: column;
+      margin: 0 30px; }
+      .band-members .bret1 .bret1-bio h2 {
+        align-self: center; }
+  .band-members .bret2 {
+    border: 2px solid lime;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+  .band-members .bret2-image {
+    background-image: url("../img/brett1.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 250px;
+    width: 100%; }
+  .band-members .bret2-bio {
+    display: flex;
+    flex-direction: column;
+    margin: 0 30px; }
+    .band-members .bret2-bio h2 {
+      align-self: center; }
+
+@media screen and (max-width: 875px) {
+  .band-members {
+    flex-direction: column; }
+    .band-members .bret1 {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around; }
+    .band-members .bret2 {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between; } }
 
 /*# sourceMappingURL=styles.css.map */
