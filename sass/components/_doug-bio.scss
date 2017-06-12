@@ -45,7 +45,8 @@
   }
 }
 
-@media screen and (max-width: 1200px) {
+
+@include desktop-breakpoint {
   .doug-bio {
     display: flex;
     flex-direction: column;
@@ -75,7 +76,7 @@
 }
 
 
-@media screen and (max-width: 875px) {
+@include large-tablet-breakpoint {
   .doug-bio {
     display: flex;
     flex-direction: column;
@@ -114,11 +115,12 @@
   }
 }
 
-@media screen and (max-width: 575px) {
+@include phone-breakpoint {
   .doug-bio {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+
 
     .doug-image {
       @include size(200px 200px);
@@ -128,8 +130,9 @@
     .bio {
       display: flex;
       flex-direction: column;
-      justify-content: space-around;
+      justify-content: space-between;
       line-height: 1.1;
+      margin-bottom: 20px;
       .box1 {
         h1 {
         font-size: 20px;

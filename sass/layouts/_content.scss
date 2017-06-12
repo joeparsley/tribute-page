@@ -20,7 +20,6 @@ $hero-width: 90%;
 .main-content {
     @include grid-container;
     @include size(100% 100%);
-    border: 2px solid blue;
 }
 
 // .wrapper {
@@ -33,8 +32,6 @@ $hero-width: 90%;
   margin-top: 50px;
   padding-left: 20px;
   @include size(100% 500px);
-  background-color: #666;
-  border: 2px solid red;
 }
 //
 // .band-members {
