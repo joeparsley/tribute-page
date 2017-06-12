@@ -89,7 +89,7 @@ header {
 .viewport {
   height: 100%;
   width: 100%;
-  background-color: #666; }
+  background-color: yellow; }
   .viewport::after {
     clear: both;
     content: "";
@@ -124,6 +124,7 @@ header {
     color: white;
     text-decoration: none;
     font-family: 'Patrick Hand SC', cursive;
+    text-shadow: 1px 1px 2px black;
     padding-top: 40px;
     margin: 0 20px; }
   .nav img {
@@ -156,17 +157,19 @@ header {
     .nav .dropdown-content {
       display: none;
       position: absolute;
-      background-color: #f9f9f9;
+      background-color: #888177;
       min-width: 160px;
       box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-      z-index: 1; }
+      z-index: 1;
+      border-radius: 5px; }
     .nav .dropdown-content a {
-      color: black;
+      color: #f2df22;
       padding: 12px 16px;
+      margin: 20px 0;
       text-decoration: none;
       display: block; }
     .nav .dropdown-content a:hover {
-      background-color: #f1f1f1; }
+      background-color: #da794e; }
     .nav .dropdown:hover .dropdown-content {
       display: block; }
     .nav .dropdown:hover .dropbtn {

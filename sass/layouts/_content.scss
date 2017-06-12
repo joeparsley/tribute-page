@@ -4,7 +4,7 @@ $hero-width: 90%;
 .viewport {
   @include grid-container;
   @include size(100% 100%);
-  background-color: #666;
+  background-color: yellow;
 }
 
 
