@@ -13,6 +13,7 @@
     border-radius: 50%;
     border: 5px outset white;
     align-self: center;
+    margin-top: 20px;
   }
 
   .bio {
@@ -84,7 +85,7 @@
 
     .doug-image {
       @include size(250px 250px);
-      margin-top: 0;
+      margin-top: 20px;
     }
 
     .bio {
@@ -124,7 +125,6 @@
 
     .doug-image {
       @include size(200px 200px);
-      margin-top: 0;
     }
 
     .bio {

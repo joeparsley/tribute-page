@@ -1,0 +1,41 @@
+.discography {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  align-content: flex-start;
+  margin-top: 140px;
+
+  .album-1{
+  font-family: 'Cabin', sans-serif;
+  font-size: 10px;
+    img {
+      @include size(150px 150px);
+    }
+  }
+
+
+
+}
+
+.album-2 {
+  @extend .album-1;
+}
+.album-3 {
+  @extend .album-1;
+}
+.album-4 {
+  @extend .album-1;
+}
+.album-5 {
+  @extend .album-1;
+}
+.album-6 {
+  @extend .album-1;
+}
+.album-7 {
+  @extend .album-1;
+}
+.album-8 {
+  @extend .album-1;
+}

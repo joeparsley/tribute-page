@@ -76,6 +76,10 @@ html, body {
 .dropdown {
   display: none; }
 
+h3 {
+  color: black;
+  text-shadow: 1px gray; }
+
 header {
   height: 100px;
   width: 100%;
@@ -116,7 +120,8 @@ header {
   margin-top: 50px;
   padding-left: 20px;
   height: 500px;
-  width: 100%; }
+  width: 100%;
+  background-color: #666; }
 
 .band-members {
   height: 500px;
@@ -228,14 +233,15 @@ header {
     width: 1200px;
     border-radius: 50%;
     border: 5px outset white;
-    align-self: center; }
+    align-self: center;
+    margin-top: 20px; }
   .doug-bio .bio {
     display: flex;
     flex-direction: column;
     justify-content: space-around; }
     .doug-bio .bio .box1 {
       margin: 0 50px; }
-      .doug-bio .bio .box1 h1 {
+      .doug-bio .bio .box1 h1, .doug-bio .bio .box1 p {
         text-decoration: underline; }
       .doug-bio .bio .box1 p {
         font-size: 26px;
@@ -272,12 +278,12 @@ header {
     .doug-bio .doug-image {
       height: 250px;
       width: 250px;
-      margin-top: 0; }
+      margin-top: 20px; }
     .doug-bio .bio {
       display: flex;
       flex-direction: column;
       justify-content: space-around; }
-      .doug-bio .bio .box1 h1 {
+      .doug-bio .bio .box1 h1, .doug-bio .bio .box1 p {
         font-size: 24px; }
       .doug-bio .bio .box1 p {
         font-size: 16px; }
@@ -290,15 +296,14 @@ header {
     justify-content: space-around; }
     .doug-bio .doug-image {
       height: 200px;
-      width: 200px;
-      margin-top: 0; }
+      width: 200px; }
     .doug-bio .bio {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
       line-height: 1.1;
       margin-bottom: 20px; }
-      .doug-bio .bio .box1 h1 {
+      .doug-bio .bio .box1 h1, .doug-bio .bio .box1 p {
         font-size: 20px; }
       .doug-bio .bio .box1 p {
         font-size: 16px; }
@@ -355,5 +360,18 @@ header {
       font-size: 14px; }
     .band-members .bret2 {
       margin-top: 120px; } }
+.discography {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  align-content: flex-start;
+  margin-top: 140px; }
+  .discography .album-1, .discography .album-2, .discography .album-3, .discography .album-4, .discography .album-5, .discography .album-6, .discography .album-7, .discography .album-8 {
+    font-family: 'Cabin', sans-serif;
+    font-size: 10px; }
+    .discography .album-1 img, .discography .album-2 img, .discography .album-3 img, .discography .album-4 img, .discography .album-5 img, .discography .album-6 img, .discography .album-7 img, .discography .album-8 img {
+      height: 150px;
+      width: 150px; }
 
 /*# sourceMappingURL=styles.css.map */

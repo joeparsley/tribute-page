@@ -26,6 +26,7 @@ $hero-width: 90%;
   margin-top: 50px;
   padding-left: 20px;
   @include size(100% 500px);
+  background-color: #666;
 }
 
 .band-members {
